@@ -327,9 +327,10 @@ body.so-cool {
 	#info ion-icon {
 		color: $cyan !important;
 	}
+	#contact-go,
 	.contact-go {
-		border-color: $cyan;
-		background-color: $cyan;
+		border-color: $cyan !important;
+		background-color: $cyan !important;
 		color: $white !important;
 	}
 }
