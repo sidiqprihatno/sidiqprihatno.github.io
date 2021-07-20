@@ -1,0 +1,53 @@
+$headings-font-family: 'Poppins', sans-serif;
+$headings-font-weight: 600;
+
+// $background: #fff
+
+$primary: #65cba0;
+$orange: #FF9011;
+$green: #13A41E;
+$yellow: #FFC403;
+$red: #FF4949;
+$cyan: #3CE6F1;
+
+$text: #101B27;
+
+$secondary: #7390A4;
+$grey-lightest: #F4F5F7;
+
+// $text: 
+
+$border-color: #E5ECEF;
+$outline-dark: #55687A;
+
+$link: $primary;
+
+// navbar
+$navbar-height: 4rem;
+$navbar-item-img-max-height: 2.5rem;
+
+// radius
+$border-radius: 3rem;
+$border-radius-lg: 4rem;
+$border-radius-sm: 1rem;
+
+// brand colors
+$brand-iklan-email: #fac42f;
+$brand-mba: #7ccfe0;
+$brand-kensington: #6ad8b7;
+$brand-plugin-ongkir: #a050ae;
+$brand-tonjoo-studio: #ec5537;
+$brand-ugm: #2aa9e0;
+
+$brand-colors: ();
+$brand-colors: map-merge(
+    (
+        "iklan-email": $brand-iklan-email,
+        "mba": $brand-mba,
+        "kensington": $brand-kensington,
+        "plugin-ongkir": $brand-plugin-ongkir,
+        "tonjoo-studio": $brand-tonjoo-studio,
+        "ugm": $brand-ugm,
+    ),
+    $brand-colors
+);

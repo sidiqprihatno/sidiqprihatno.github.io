@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 157.699 22.735">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #f5f5f5;
+        stroke-linecap: round;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <path id="separator" class="cls-1" d="M613.018,4248.522l17.078-17.078,17.078,17.078,17.078-17.078,17.078,17.078,17.078-17.078,17.078,17.078,17.078-17.078,17.078,17.078,17.078-17.078" transform="translate(-611.018 -4228.616)"/>
+</svg>

@@ -1,0 +1,253 @@
+html {
+	overflow-y: auto;
+	min-height: 100%;
+}
+
+::selection {
+	color: $white;
+	background-color: $primary;
+}
+
+#the-content {
+	position: relative;
+	z-index: 3;
+	background-color: $white;
+}
+
+// custom variable
+$heading-content-height: 225px;
+$heading-content-width: 340px;
+$heading-content-height-desktop: 265px;
+$ribon-width: 96px;
+
+#main-heading {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	position: relative;
+	max-width: 375px;
+	padding: 0 1.5rem;
+	min-height: 100vh;
+	
+	.ribbon {
+		width: 120px;
+		background-color: $primary;
+		// background-image: linear-gradient(180deg, $cyan, rgba($primary, 0));
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		position: absolute;
+		top: 0;
+		transform: translateX(50%);
+		height: calc(((100% - #{$heading-content-height})/2) - 3rem);
+		border-bottom-right-radius: 5rem;
+		border-bottom-left-radius: 5rem;
+	}
+	.heading-content {
+		max-width: 340px;
+		height: 225px;
+		text-align: center;
+	}
+	.title {
+		font-size: 3rem;
+		font-weight: 600;
+	}
+	.subtitle {
+		font-size: 1rem;
+		line-height: 1.75rem;
+	}
+	.present {
+		display: block;
+		position: relative;
+		
+		.my-logo {
+			position: absolute;
+			top: 50%;
+			margin-top: -48px;
+			height: 96px;
+			left: -#{72*2}px;
+			padding: 1rem;
+			background-color: $primary;
+		}
+	}
+	.my-focus {
+		display: block;
+		font-size: 1.25rem;
+	}
+	@include media-breakpoint-up(md) {
+		max-width: none;
+		padding: 0;
+		
+		.heading-content {
+			height: 265px;
+			text-align: left;
+		}
+		.title {
+			font-size: 64px;
+			height: 150px;
+		}
+		.subtitle {
+			line-height: 2rem;
+		}
+		.my-focus {
+			font-size: 1.5rem;
+			font-weight: normal;
+		}
+		.ribbon {
+			left: 50%;
+			margin-left: -#{((338/2)+120)+48}px;
+			// 100% - headingContent/2 + titleHeight + 1.5 marginBottom
+			height: calc(((100% - 265px)/2) + 150px + 1.5rem);
+		}
+	}
+}
+#info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 3.5rem;
+	width: 100%;
+	font-size: .875rem;
+	position: fixed;
+	z-index: 3;
+	left: 0;
+	bottom: 6rem;
+	
+	.icon {
+		color: $primary;
+		font-size: 1.5rem;
+	}
+	@include media-breakpoint-up(md) {
+		justify-content: center;
+		font-size: inherit;
+		bottom: 2rem;
+	}
+}
+.separator {
+	img {
+		height: 1rem;
+		display: block;
+		margin: 0 auto;
+	}
+	@include media-breakpoint-up(md) {
+		padding: 0 0;
+		
+		img {
+			height: 1.5rem;
+		}
+	}
+}
+
+#contact-go {
+	display: inline-flex;
+	align-items: center;
+	height: 56px;
+	width: 56px;
+	padding: 0;
+	background-color: $white;
+	color: $primary !important;
+	border-radius: 999px;
+	position: fixed;
+	z-index: 3;
+	text-decoration: none;
+	justify-content: center;
+	transition: all ease-in-out .2s;
+	right: 1.5rem;
+	bottom: 1.5rem;
+	
+	.icon {
+		font-size: 1.5rem;
+		transition: margin ease-in-out .2s;
+	}
+	.button-text {
+		font-size: 0;
+	}
+	@include media-breakpoint-up(md) {
+		bottom: 2rem;
+		right: 2rem;
+		
+		&:hover {
+			padding: 0 1.5rem;
+			width: auto;
+			
+			.button-text {
+				font-size: inherit;
+				margin-left: 0.5rem;
+			}
+		}
+	}
+}
+
+.contact-go {
+	box-shadow: 0 0 5rem rgba($cyan, 0.75);
+	border: 1px solid $primary;
+
+	&:hover {
+		color: $primary !important;
+		background-color: $white !important;
+	}
+}
+
+#portfolios {
+	.button-box {
+		margin-top: 3rem;
+	}
+	&.less-content .portfolio-item {
+		&:nth-child(3):after {
+			display: none;
+		}
+	}
+}
+
+// footer height
+$fooer-height: 165px;
+
+#contact {
+	margin-bottom: $fooer-height;
+
+	.contact-header {
+		max-width: 564px;
+	}
+	.title {
+		font-size: 3rem;
+		color: $primary;
+		font-weight: normal;
+	}
+	.button {
+		width: 100%;
+		align-items: center;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		font-size: 1.5rem;
+	}
+	@include media-breakpoint-up(md) {
+		.title {
+			font-size: 56px;
+		}
+		.subtitle {
+			font-size: 1.5rem;
+		}
+		.button {
+			height: auto;
+			width: auto;
+		}
+	}
+}
+#footer {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	height: $fooer-height;
+}
+.socials a {
+	font-size: 2rem;
+	color: inherit;
+	display: inline-block;
+
+	&:not(:last-child) {
+		margin-right: 1rem;
+	}
+}

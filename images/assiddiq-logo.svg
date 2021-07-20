@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="assiddiq-logo" class="cls-1" d="M58,64V17H35V12H64V64ZM41,64H0V58H6V52H0V47H12V58h5V47H41V58h6V29H35V23H52V64ZM23,58H35V52H23ZM0,41V0H64V6H6V35h6V23H29V41Zm18-6h5V29H18Zm5-18V12h6v5ZM12,17V12h5v5Z"/>
+</svg>

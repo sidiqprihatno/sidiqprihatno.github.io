@@ -1,0 +1,17 @@
+{
+  "name": "assiddiq-html",
+  "version": "1.0.0",
+  "description": "Sidiq Prihatno Portfolio's",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -w --output-style compressed --source-map style.map scss -o ./"
+  },
+  "author": "Sidiq Prihatno",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "bulma": "^0.9.3",
+    "node-sass": "^6.0.1"
+  }
+}
