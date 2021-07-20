@@ -18,9 +18,11 @@ jQuery(function($) {
         $(this).removeClass('infinite');
     });
 
-    // $('#contact-go').on('mouseout', function(){
-    //     $(this).addClass('infinite');
-    // });
+    $('#main-heading .my-logo').on('mouseover', function(){
+        $('body').addClass('so-cool');
+    }).on('mouseout', function(){
+        $('body').removeClass('so-cool');
+    });
 
     $(window).scroll(function(){
         if ($(this).scrollTop() > 0) {
