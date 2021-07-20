@@ -2,6 +2,10 @@ html {
 	min-height: 100%;
 }
 
+body {
+	background-color: $gray-100;
+}
+
 ::selection {
 	color: $white;
 	background-color: $primary;
@@ -12,6 +16,8 @@ html {
 	z-index: 3;
 	background-color: $white;
 	box-shadow: 0 1rem 5rem $gray-300;
+	border-bottom-right-radius: $border-radius;
+	border-bottom-left-radius: $border-radius;
 }
 
 // custom variable
@@ -221,7 +227,7 @@ $footer-height: 200px;
 		max-width: 564px;
 	}
 	.title {
-		font-size: 3rem;
+		font-size: 2.5rem;
 		color: $primary;
 		font-weight: normal;
 	}
