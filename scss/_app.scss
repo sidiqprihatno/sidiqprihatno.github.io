@@ -1,5 +1,4 @@
 html {
-	overflow-y: auto;
 	min-height: 100%;
 }
 
@@ -12,6 +11,7 @@ html {
 	position: relative;
 	z-index: 3;
 	background-color: $white;
+	box-shadow: 0 1rem 5rem $gray-300;
 }
 
 // custom variable
@@ -124,6 +124,17 @@ $ribon-width: 96px;
 		bottom: 2rem;
 	}
 }
+
+.portfolio-item {
+	&:hover .img-fluid {
+		animation-name: pulse;
+	}
+	.portfolio-link a,
+	ion-icon {
+		transition: color ease-in-out 0.2s;
+	}
+}
+
 .separator {
 	img {
 		height: 1rem;
@@ -201,10 +212,10 @@ $ribon-width: 96px;
 }
 
 // footer height
-$fooer-height: 165px;
+$footer-height: 200px;
 
 #contact {
-	margin-bottom: $fooer-height;
+	margin-bottom: $footer-height;
 
 	.contact-header {
 		max-width: 564px;
@@ -240,12 +251,16 @@ $fooer-height: 165px;
 	right: 0;
 	bottom: 0;
 	z-index: -1;
-	height: $fooer-height;
+	height: $footer-height;
 }
 .socials a {
 	font-size: 2rem;
 	color: inherit;
 	display: inline-block;
+
+	&:hover {
+		color: $primary;
+	}
 
 	&:not(:last-child) {
 		margin-right: 1rem;

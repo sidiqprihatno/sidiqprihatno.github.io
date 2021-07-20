@@ -22,6 +22,14 @@
           background-color: $white;
           box-shadow: 0 2rem 5rem tint($value, 80%);
           z-index: 3;
+
+          ion-icon {
+              color: $value;
+          }
+
+          .portfolio-link:hover a {
+              color: $value !important;
+          }
       }
     }
 }
