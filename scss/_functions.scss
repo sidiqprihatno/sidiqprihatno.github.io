@@ -22,10 +22,6 @@
           background-color: $value;
       }
 
-      .portfolio-image:before {
-          background-color: tint($value, 40%);
-      }
-
       &:hover {
           background-color: $white;
           box-shadow: 0 2rem 5rem tint($value, 80%);
