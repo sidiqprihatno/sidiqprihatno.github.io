@@ -322,10 +322,12 @@ body.so-cool {
 			color: $cyan !important;
 		}
 	}
+	.socials a:hover ion-icon,
+	#contact .text-primary,
 	#info ion-icon {
 		color: $cyan !important;
 	}
-	#contact-go {
+	.contact-go {
 		border-color: $cyan;
 		background-color: $cyan;
 		color: $white !important;
