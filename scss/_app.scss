@@ -122,14 +122,14 @@ $ribon-width: 96px;
 #info {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: start;
 	height: 3.5rem;
 	width: 100%;
 	font-size: .875rem;
 	position: fixed;
 	z-index: 3;
 	left: 0;
-	bottom: 6rem;
+	bottom: 1.5rem;
 	
 	.icon {
 		color: $primary;
