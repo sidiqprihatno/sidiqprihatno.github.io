@@ -26,6 +26,12 @@ $heading-content-width: 340px;
 $heading-content-height-desktop: 265px;
 $ribon-width: 96px;
 
+.text-brand {
+	background-image: linear-gradient(315deg, $primary, $accent);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 #main-heading {
 	display: flex;
 	align-items: center;
@@ -38,8 +44,8 @@ $ribon-width: 96px;
 	
 	.ribbon {
 		width: 120px;
-		background-color: $primary;
-		transition: background-color ease-in-out 0.2s;
+		background-image: linear-gradient(315deg, $primary, $accent);
+		transition: background-image ease-in-out 0.2s;
 		display: flex;
 		align-items: flex-end;
 		justify-content: center;
@@ -236,7 +242,7 @@ $ribon-width: 96px;
 }
 
 .contact-go {
-	box-shadow: 0 0 5rem rgba($cyan, 0.75);
+	box-shadow: 0 0 5rem rgba($accent, 0.75);
 	border: 1px solid $primary;
 
 	&:hover {
@@ -309,28 +315,5 @@ $footer-height: 200px;
 
 	&:not(:last-child) {
 		margin-right: 1rem;
-	}
-}
-
-// so cool
-body.so-cool {
-	#main-heading {
-		.ribbon {
-			background-color: $cyan;
-		}
-		.text-primary {
-			color: $cyan !important;
-		}
-	}
-	.socials a:hover ion-icon,
-	#contact .text-primary,
-	#info ion-icon {
-		color: $cyan !important;
-	}
-	#contact-go,
-	.contact-go {
-		border-color: $cyan !important;
-		background-color: $cyan !important;
-		color: $white !important;
 	}
 }

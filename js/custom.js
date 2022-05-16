@@ -18,12 +18,6 @@ jQuery(function($) {
         $(this).removeClass('infinite');
     });
 
-    $('#main-heading .my-logo').on('mouseover', function(){
-        $('body').addClass('so-cool');
-    }).on('mouseout', function(){
-        $('body').removeClass('so-cool');
-    });
-
     $(window).scroll(function(){
         if ($(this).scrollTop() > 0) {
            $('#info').slideUp(100);
